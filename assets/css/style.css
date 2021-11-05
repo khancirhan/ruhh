@@ -1,0 +1,602 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 32px 0;
+  transition: all 0.5s ease;
+}
+.header.sticky {
+  background-color: #fff;
+  padding: 16px 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.header.move-up {
+  transform: translateY(-100%);
+}
+
+.navbar {
+  padding: 0;
+  background-color: transparent;
+}
+.navbar .navbar-brand {
+  color: inherit;
+}
+.navbar .nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 46px;
+}
+.navbar .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar .nav-link {
+  color: inherit;
+}
+.navbar .nav-link:hover {
+  color: #e02055;
+}
+
+/* ----------------------------- Gloabal Styles ----------------------------- */
+.about .about-para, .hero .hero-paragraph, .body-text {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 576px) {
+  .about .about-para, .hero .hero-paragraph, .body-text {
+    font-size: 0.9rem;
+  }
+}
+
+.process .process-heading, .explore .explore-heading, .hero .hero-heading, .heading-h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .process .process-heading, .explore .explore-heading, .hero .hero-heading, .heading-h1 {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .process .process-heading, .explore .explore-heading, .hero .hero-heading, .heading-h1 {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .process .process-heading, .explore .explore-heading, .hero .hero-heading, .heading-h1 {
+    font-size: 2.1rem;
+  }
+}
+
+.about .about-heading, .heading-h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .about .about-heading, .heading-h2 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-heading, .heading-h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .about .about-heading, .heading-h2 {
+    font-size: 1.3rem;
+  }
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.text-bluish {
+  color: #0171e2;
+}
+
+.text-greenish {
+  color: #009468;
+}
+
+.text-yellowish {
+  color: #f7b200;
+}
+
+.title-text {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.text-btn .icon {
+  margin-left: 8px;
+  line-height: 0;
+}
+
+.elevated-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.elevated-btn .icon {
+  margin-left: 8px;
+  line-height: 0;
+}
+.elevated-btn:hover {
+  background-color: #e23263;
+  border-color: #e23263;
+}
+
+.btn-primary {
+  background-color: #e02055;
+  color: #fff;
+}
+
+.spacer {
+  margin: auto;
+}
+
+.flexbox-lg {
+  display: block;
+}
+
+.main {
+  background-image: url("../img/bg-overlay.png"), url("../img/bg-frame.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* ----------------------------- Hero Section ----------------------------- */
+.hero {
+  padding-top: 192px;
+}
+.hero .hero-content {
+  max-width: 1000px;
+}
+.hero .hero-heading {
+  margin-bottom: 55px;
+}
+.hero .hero-paragraph {
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+/* ----------------------------- About Section ----------------------------- */
+.about {
+  padding-top: 45px;
+  padding-bottom: 70px;
+}
+.about .about-content {
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+.about .about-img {
+  margin-left: auto;
+  height: 667px;
+  max-width: 455px;
+  background-color: #adadad;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.about .about-heading {
+  max-width: 690px;
+  margin-bottom: 55px;
+}
+.about .about-para {
+  max-width: 590px;
+  margin-bottom: 22px;
+}
+.about .about-name {
+  margin-top: 10px;
+  color: #e02055;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* ----------------------------- Featured On Section ----------------------------- */
+.featured-on {
+  background-color: #280009;
+  padding: 84px 0;
+}
+
+/* ----------------------------- Explore Section ----------------------------- */
+.explore {
+  padding-top: 128px;
+}
+.explore .explore-heading {
+  margin-bottom: 72px;
+}
+.explore .explore-swiper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.explore .explore-swiper .swiper-fade-right, .explore .explore-swiper .swiper-fade-left {
+  position: absolute;
+  top: 0;
+  width: 189px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.explore .explore-swiper .swiper-btn-next, .explore .explore-swiper .swiper-btn-prev {
+  position: absolute;
+  top: 140px;
+  z-index: 2;
+}
+.explore .explore-swiper .swiper-btn-prev {
+  left: 32px;
+}
+.explore .explore-swiper .swiper-btn-next {
+  right: 32px;
+}
+.explore .explore-swiper .swiper-fade-left {
+  left: 0;
+  background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
+}
+.explore .explore-swiper .swiper-fade-right {
+  right: 0;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
+}
+.explore .explore-img {
+  width: 100%;
+  height: 308px;
+  background-color: #adadad;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.explore .explore-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.explore .explore-title {
+  margin-top: 32px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.explore .explore-meta {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+}
+
+/* ----------------------------- Rapid Transformation Section ----------------------------- */
+.rapid-transformation {
+  padding-top: 68px;
+}
+.rapid-transformation .rapid-transformation-content {
+  position: relative;
+}
+.rapid-transformation .bg-img {
+  height: auto;
+  width: 100%;
+  background-color: #adadad;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.rapid-transformation .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.rapid-transformation .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.rapid-transformation .overlay-content {
+  padding: 64px;
+}
+
+/* ----------------------------- Process Section ----------------------------- */
+.process {
+  padding-top: 128px;
+  padding-bottom: 145px;
+  overflow: hidden;
+}
+.process .process-heading {
+  max-width: 777px;
+  margin-bottom: 68px;
+}
+.process .process-step-heading {
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.process .stepper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+.process .step {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  opacity: 0;
+}
+.process .step:first-child {
+  opacity: 1;
+}
+.process .step-heading {
+  flex: 1;
+}
+.process .step-content {
+  flex: 4;
+}
+
+/* ----------------------------- Booking Section ----------------------------- */
+.booking {
+  padding: 30px 0;
+  background: #eeeeee;
+}
+.booking .booking-content {
+  display: flex;
+  align-items: center;
+}
+.booking .bg-img {
+  width: 160px;
+  background-color: blue;
+}
+.booking .title {
+  margin-left: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* ----------------------------- Footer Section ----------------------------- */
+.footer {
+  background-color: #280009;
+  padding: 58px 0;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-links {
+  display: flex;
+}
+.footer .footer-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 64px;
+  transition: color 0.15s ease-in-out;
+}
+.footer .footer-link:last-child {
+  margin-right: 0;
+}
+.footer .footer-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .copyright-text {
+  margin-top: 32px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.footer .social-title {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+.footer .social-links {
+  margin-top: 38px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .social-link {
+  text-decoration: none;
+  margin-right: 18px;
+}
+.footer .social-link:last-child {
+  margin-right: 0;
+}
+.footer .social-link img {
+  width: 22px;
+  height: 22px;
+  background-color: #eeeeee;
+}
+
+@media (max-width: 992px) {
+  /* ----------------------------- Gloabal Styles ----------------------------- */
+  .text-btn {
+    font-size: 1.1rem;
+  }
+
+  .flexbox-lg {
+    display: flex;
+  }
+
+  /* ----------------------------- Hero Section ----------------------------- */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-top: 0;
+  }
+
+  /* ----------------------------- About Section ----------------------------- */
+  .about {
+    padding-top: 10px;
+  }
+  .about .about-img {
+    margin: auto;
+    margin-top: 40px;
+    height: 586px;
+    max-width: 400px;
+  }
+  .about .about-name {
+    font-size: 1.1rem;
+  }
+
+  /* ----------------------------- Process Section ----------------------------- */
+  .process .process-step-heading {
+    font-size: 2.125rem;
+  }
+  .process .step-heading {
+    flex: 2;
+  }
+  .process .step-content {
+    flex: 5;
+  }
+
+  /* ----------------------------- Booking Section ----------------------------- */
+  .booking .bg-img {
+    width: 120px;
+  }
+  .booking .title {
+    font-size: 1.2rem;
+  }
+
+  /* ----------------------------- Footer Section ----------------------------- */
+  .footer .footer-content {
+    flex-direction: column-reverse;
+  }
+  .footer .footer-links {
+    margin-top: 32px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer .footer-link {
+    font-size: 0.9rem;
+    margin: 10px;
+  }
+  .footer .footer-link:last-child {
+    margin: 10px;
+  }
+  .footer .social-links {
+    margin-top: 0;
+  }
+  .footer .copyright-text {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* ----------------------------- Gloabal Styles ----------------------------- */
+  .text-btn {
+    font-size: 1rem;
+  }
+
+  /* ----------------------------- About Section ----------------------------- */
+  .about .about-name {
+    font-size: 1rem;
+  }
+
+  /* ----------------------------- Rapid Transformation Section ----------------------------- */
+  .rapid-transformation .overlay-content {
+    padding: 34px 40px;
+  }
+
+  /* ----------------------------- Process Section ----------------------------- */
+  .process .process-step-heading {
+    font-size: 2rem;
+  }
+  .process .step-heading {
+    flex: 3;
+  }
+  .process .step-content {
+    flex: 6;
+  }
+
+  /* ----------------------------- Booking Section ----------------------------- */
+  .booking .bg-img {
+    width: 100px;
+  }
+  .booking .title {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  /* ----------------------------- Gloabal Styles ----------------------------- */
+  .title-text {
+    font-size: 0.9rem;
+  }
+
+  /* ----------------------------- About Section ----------------------------- */
+  .about .about-img {
+    margin: auto;
+    margin-top: 40px;
+    height: 540px;
+    max-width: 400px;
+  }
+  .about .about-name {
+    font-size: 1.1rem;
+  }
+
+  /* ----------------------------- Rapid Transformation Section ----------------------------- */
+  .rapid-transformation .overlay-content {
+    padding: 16px 20px;
+  }
+
+  /* ----------------------------- Process Section ----------------------------- */
+  .process .process-step-heading {
+    font-size: 1.25rem;
+  }
+  .process .step-heading {
+    flex: 3;
+  }
+  .process .step-content {
+    flex: 6;
+  }
+
+  /* ----------------------------- Booking Section ----------------------------- */
+  .booking .bg-img {
+    width: 100px;
+  }
+  .booking .title {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

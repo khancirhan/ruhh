@@ -1,0 +1,5 @@
+For compiling bootstrap scss files:
+    sass assets/bootstrap-scss/bootstrap.scss assets/css/bootstrap.css
+
+For compiling and watching scss files:    
+    sass --watch assets/scss:assets/css

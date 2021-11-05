@@ -1,0 +1,46 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 32px 0;
+    transition: all 0.5s ease;
+
+    &.sticky {
+        background-color: #fff;
+        padding: 16px 0;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &.move-up {
+        transform: translateY(-100%);
+    }
+}
+
+.navbar {
+    padding: 0;
+    background-color: transparent;
+
+    .navbar-brand {
+        color: inherit;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        margin-right: 46px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .nav-link {
+        color: inherit;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
