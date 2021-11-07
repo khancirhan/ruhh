@@ -1,11 +1,16 @@
-/* ------------------ Add sticky class to header when scroll has moved past a given point ------------------ */
+/* ------------------ Add fixed class to header when scroll has moved past a given point ------------------ */
 $(window).scroll(function () {
+    const screenWidth =
+        window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+    if (screenWidth <= 991) return;
+
     const scroll = $(window).scrollTop();
 
     if (scroll >= 20) {
-        $('.header').addClass('sticky');
+        $('.header').addClass('fixed');
     } else {
-        $('.header').removeClass('sticky');
+        $('.header').removeClass('fixed');
     }
 });
 
