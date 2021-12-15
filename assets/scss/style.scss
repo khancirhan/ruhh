@@ -216,9 +216,58 @@ p {
 }
 
 /* ----------------------------- Featured On Section ----------------------------- */
-.featured-on {
+.testimonials {
     background-color: $maroon;
     padding: 84px 0;
+
+    .testimonials-swiper {
+        margin-top: 65px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .testimonial-title {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .testimonial-para {
+            margin-top: 54px;
+            color: #fff;
+            font-size: 1.75rem;
+            line-height: 1.48;
+        }
+
+        .testimonial-author {
+            margin-top: 48px;
+            font-size: 1.25rem;
+            line-height: 24px;
+        }
+
+        .explore-navigation {
+            margin-left: auto;
+            display: flex;
+            justify-content: flex-end;
+
+            %swiper-btn {
+                color: #fff;
+
+                &.swiper-button-disabled {
+                    color: rgba(255, 255, 255, 0.3);
+                }
+            }
+
+            .swiper-btn-prev {
+                @extend %swiper-btn;
+                margin-right: 50px;
+            }
+
+            .swiper-btn-next {
+                @extend %swiper-btn;
+            }
+        }
+    }
 }
 
 /* ----------------------------- Explore Section ----------------------------- */
@@ -263,21 +312,13 @@ p {
         .swiper-fade-left {
             @extend %swiper-fade;
             left: 0;
-            background-image: linear-gradient(
-                270deg,
-                rgba(255, 255, 255, 0) 10.49%,
-                #ffffff 110.56%
-            );
+            background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
         }
 
         .swiper-fade-right {
             @extend %swiper-fade;
             right: 0;
-            background-image: linear-gradient(
-                90deg,
-                rgba(255, 255, 255, 0) 10.49%,
-                #ffffff 110.56%
-            );
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
         }
     }
 

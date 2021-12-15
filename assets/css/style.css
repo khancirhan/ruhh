@@ -259,11 +259,46 @@ p {
 }
 
 /* ----------------------------- Featured On Section ----------------------------- */
-.featured-on {
+.testimonials {
   background-color: #280009;
   padding: 84px 0;
 }
-
+.testimonials .testimonials-swiper {
+  margin-top: 65px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.testimonials .testimonials-swiper .testimonial-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.testimonials .testimonials-swiper .testimonial-para {
+  margin-top: 54px;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1.48;
+}
+.testimonials .testimonials-swiper .testimonial-author {
+  margin-top: 48px;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+.testimonials .testimonials-swiper .explore-navigation {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.testimonials .testimonials-swiper .explore-navigation .swiper-btn-next, .testimonials .testimonials-swiper .explore-navigation .swiper-btn-prev {
+  color: #fff;
+}
+.testimonials .testimonials-swiper .explore-navigation .swiper-button-disabled.swiper-btn-next, .testimonials .testimonials-swiper .explore-navigation .swiper-button-disabled.swiper-btn-prev {
+  color: rgba(255, 255, 255, 0.3);
+}
+.testimonials .testimonials-swiper .explore-navigation .swiper-btn-prev {
+  margin-right: 50px;
+}
 /* ----------------------------- Explore Section ----------------------------- */
 .explore {
   padding-top: 128px;
@@ -284,7 +319,7 @@ p {
   z-index: 1;
   pointer-events: none;
 }
-.explore .explore-swiper .swiper-btn-next, .explore .explore-swiper .swiper-btn-prev {
+.explore .explore-swiper .swiper-btn-next, .explore .explore-swiper .swiper-btn-prev, .explore .explore-swiper .testimonials .testimonials-swiper .explore-navigation .swiper-btn-prev, .testimonials .testimonials-swiper .explore-navigation .explore .explore-swiper .swiper-btn-prev, .explore .explore-swiper .testimonials .testimonials-swiper .explore-navigation .swiper-btn-next, .testimonials .testimonials-swiper .explore-navigation .explore .explore-swiper .swiper-btn-next {
   position: absolute;
   top: 140px;
   z-index: 2;
