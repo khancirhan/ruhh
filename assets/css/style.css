@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 800;
   padding: 32px 0;
   transition: all 0.5s ease;
 }
@@ -66,12 +66,12 @@
   }
 }
 /* ----------------------------- Gloabal Styles ----------------------------- */
-.about .about-para, .hero .hero-paragraph, .body-text {
+.testimonials .testimonials-swiper .testimonial-para, .about .about-para, .hero .hero-paragraph, .body-text {
   font-size: 1rem;
   letter-spacing: -0.03em;
 }
 @media (max-width: 576px) {
-  .about .about-para, .hero .hero-paragraph, .body-text {
+  .testimonials .testimonials-swiper .testimonial-para, .about .about-para, .hero .hero-paragraph, .body-text {
     font-size: 0.9rem;
   }
 }
@@ -97,29 +97,33 @@
   }
 }
 
-.about .about-heading, .heading-h2 {
+.testimonials .testimonials-swiper .testimonial-title, .about .about-heading, .heading-h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.05;
 }
 @media (max-width: 992px) {
-  .about .about-heading, .heading-h2 {
+  .testimonials .testimonials-swiper .testimonial-title, .about .about-heading, .heading-h2 {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 768px) {
-  .about .about-heading, .heading-h2 {
+  .testimonials .testimonials-swiper .testimonial-title, .about .about-heading, .heading-h2 {
     font-size: 1.9rem;
   }
 }
 @media (max-width: 576px) {
-  .about .about-heading, .heading-h2 {
+  .testimonials .testimonials-swiper .testimonial-title, .about .about-heading, .heading-h2 {
     font-size: 1.7rem;
   }
 }
 
 * {
   font-family: "Inter", sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 h1,
@@ -160,6 +164,7 @@ p {
   padding: 0;
   font-size: 1.25rem;
   font-weight: 600;
+  text-decoration: none;
 }
 .text-btn .icon {
   margin-left: 8px;
@@ -216,7 +221,7 @@ p {
 }
 .hero .hero-paragraph {
   margin-bottom: 32px;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 /* ----------------------------- About Section ----------------------------- */
@@ -258,7 +263,7 @@ p {
   font-weight: 600;
 }
 
-/* ----------------------------- Featured On Section ----------------------------- */
+/* ----------------------------- Testimonials Section ----------------------------- */
 .testimonials {
   background-color: #280009;
   padding: 84px 0;
@@ -271,14 +276,11 @@ p {
 }
 .testimonials .testimonials-swiper .testimonial-title {
   color: #fff;
-  font-size: 4rem;
-  font-weight: 700;
 }
 .testimonials .testimonials-swiper .testimonial-para {
   margin-top: 54px;
   color: #fff;
-  font-size: 1.75rem;
-  line-height: 1.48;
+  line-height: 2;
 }
 .testimonials .testimonials-swiper .testimonial-author {
   margin-top: 48px;
@@ -433,6 +435,7 @@ p {
   flex: 1;
 }
 .process .step-content {
+  margin-left: 20px;
   flex: 4;
 }
 
@@ -447,7 +450,10 @@ p {
 }
 .booking .bg-img {
   width: 160px;
-  background-color: blue;
+  height: 72px;
+}
+.booking .bg-img img {
+  width: 100%;
 }
 .booking .title {
   margin-left: 24px;
@@ -509,6 +515,45 @@ p {
   background-color: #eeeeee;
 }
 
+/* -----------------------------Video Player ----------------------------- */
+.video-player-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.video-player-wrapper .video-player-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.video-player-wrapper .video-player {
+  position: relative;
+  max-width: 1140px;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+}
+.video-player-wrapper .video-player video {
+  width: 100%;
+  border-radius: 10px;
+}
+.video-player-wrapper .player-close-btn {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 0;
+  z-index: 999;
+}
+
 @media (max-width: 992px) {
   /* ----------------------------- Gloabal Styles ----------------------------- */
   .text-btn {
@@ -538,6 +583,11 @@ p {
     max-width: 400px;
   }
   .about .about-name {
+    font-size: 1.1rem;
+  }
+
+  /* ----------------------------- Testimonials Section ----------------------------- */
+  .testimonials .testimonials-swiper .testimonial-author {
     font-size: 1.1rem;
   }
 
@@ -583,6 +633,11 @@ p {
   .footer .copyright-text {
     text-align: center;
   }
+
+  /* -----------------------------Video Player ----------------------------- */
+  .video-player-wrapper .video-player {
+    max-width: 960px;
+  }
 }
 @media (max-width: 768px) {
   /* ----------------------------- Gloabal Styles ----------------------------- */
@@ -592,6 +647,11 @@ p {
 
   /* ----------------------------- About Section ----------------------------- */
   .about .about-name {
+    font-size: 1rem;
+  }
+
+  /* ----------------------------- Testimonials Section ----------------------------- */
+  .testimonials .testimonials-swiper .testimonial-author {
     font-size: 1rem;
   }
 
@@ -618,6 +678,11 @@ p {
   .booking .title {
     font-size: 1.1rem;
   }
+
+  /* -----------------------------Video Player ----------------------------- */
+  .video-player-wrapper .video-player {
+    max-width: 720px;
+  }
 }
 @media (max-width: 576px) {
   /* ----------------------------- Gloabal Styles ----------------------------- */
@@ -631,9 +696,6 @@ p {
     margin-top: 40px;
     height: 540px;
     max-width: 400px;
-  }
-  .about .about-name {
-    font-size: 1.1rem;
   }
 
   /* ----------------------------- Rapid Transformation Section ----------------------------- */
@@ -658,6 +720,11 @@ p {
   }
   .booking .title {
     font-size: 1rem;
+  }
+
+  /* -----------------------------Video Player ----------------------------- */
+  .video-player-wrapper .video-player {
+    max-width: 540px;
   }
 }
 
