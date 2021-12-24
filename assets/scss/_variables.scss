@@ -1,3 +1,48 @@
 $primary: #e02055;
 $secondary: rgba(0, 0, 0, 0.5);
 $maroon: #280009;
+
+%body-text-base {
+    font-size: 1rem;
+    letter-spacing: -0.03em;
+
+    @media (max-width: 576px) {
+        font-size: 0.9rem;
+    }
+}
+
+%heading-h1-base {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.05;
+
+    @media (max-width: 992px) {
+        font-size: 4.2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 3.1rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 2.6rem;
+    }
+}
+
+%heading-h2-base {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.05;
+
+    @media (max-width: 992px) {
+        font-size: 2.4rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.9rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.7rem;
+    }
+}

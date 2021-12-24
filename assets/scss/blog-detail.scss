@@ -1,0 +1,31 @@
+@import 'variables';
+
+/* ----------------------------- blog Section ----------------------------- */
+.blog {
+    padding-top: 162px;
+    padding-bottom: 70px;
+
+    .blog-content {
+        height: 100%;
+        display: grid;
+        align-content: center;
+    }
+
+    .blog-heading {
+        @extend %heading-h2-base;
+        margin-bottom: 14px;
+    }
+
+    .blog-author {
+        font-size: 15px;
+        line-height: 1.5rem;
+        letter-spacing: -0.03em;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 48px;
+    }
+
+    .blog-para {
+        @extend %body-text-base;
+        margin-bottom: 28px;
+    }
+}

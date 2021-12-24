@@ -1,7 +1,6 @@
 /* ------------------ Add fixed class to header when scroll has moved past a given point ------------------ */
 $(window).scroll(function () {
-    const screenWidth =
-        window.innerWidth > 0 ? window.innerWidth : screen.width;
+    const screenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
 
     if (screenWidth <= 991) return;
 

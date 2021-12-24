@@ -1,0 +1,67 @@
+.about .about-para {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 576px) {
+  .about .about-para {
+    font-size: 0.9rem;
+  }
+}
+
+.about .about-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .about .about-heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-heading {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .about .about-heading {
+    font-size: 1.7rem;
+  }
+}
+
+/* ----------------------------- About Section ----------------------------- */
+.about {
+  padding-top: 135px;
+  padding-bottom: 70px;
+}
+.about .about-content {
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+.about .about-img {
+  position: sticky;
+  top: 40px;
+  margin-left: auto;
+  height: 667px;
+  max-width: 455px;
+  background-color: #adadad;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.about .about-heading {
+  max-width: 690px;
+  margin-bottom: 55px;
+}
+.about .about-para {
+  max-width: 590px;
+  margin-bottom: 22px;
+}
+
+/*# sourceMappingURL=about.css.map */

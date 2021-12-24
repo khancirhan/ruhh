@@ -1,0 +1,43 @@
+@import 'variables';
+
+/* ----------------------------- About Section ----------------------------- */
+.about {
+    padding-top: 135px;
+    padding-bottom: 70px;
+
+    .about-content {
+        height: 100%;
+        display: grid;
+        align-content: center;
+    }
+
+    .about-img {
+        position: sticky;
+        top: 40px;
+        margin-left: auto;
+        height: 667px;
+        max-width: 455px;
+        background-color: rgb(173, 173, 173);
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .about-heading {
+        @extend %heading-h2-base;
+        max-width: 690px;
+        margin-bottom: 55px;
+    }
+
+    .about-para {
+        @extend %body-text-base;
+        max-width: 590px;
+        margin-bottom: 22px;
+    }
+}

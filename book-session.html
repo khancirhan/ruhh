@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/book-session.css" />
+
+        <title>Ruhh</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <section class="stepper">
+                <div class="container">
+                    <img src="assets/img/logo.svg" alt="" />
+                    <h2 class="stepper-heading text-primary">Step 1</h2>
+                    <p class="stepper-para">
+                        Let's start by confirming the area you wish to work on, how it's impacting you and what it is
+                        you want from your session: This question is required.*
+                    </p>
+
+                    <div class="stepper-form">
+                        <input
+                            id="stepperInput1"
+                            class="stepper-form-control"
+                            type="text"
+                            placeholder="Type or select an option"
+                        />
+
+                        <div class="suggestion-pills">
+                            <a class="suggestion-pill">Depression</a>
+                            <a class="suggestion-pill">Diabetes</a>
+                            <a class="suggestion-pill">Addictions</a>
+                            <a class="suggestion-pill">Cancer</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+    <!-- Jquery -->
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $('.suggestion-pill').click(function () {
+            const stepperInput1 = $('#stepperInput1');
+
+            stepperInput1.val(this.text);
+        });
+    </script>
+</html>

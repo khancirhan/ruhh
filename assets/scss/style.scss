@@ -2,51 +2,6 @@
 @import 'header';
 
 /* ----------------------------- Gloabal Styles ----------------------------- */
-%body-text-base {
-    font-size: 1rem;
-    letter-spacing: -0.03em;
-
-    @media (max-width: 576px) {
-        font-size: 0.9rem;
-    }
-}
-
-%heading-h1-base {
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 1.05;
-
-    @media (max-width: 992px) {
-        font-size: 4.2rem;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 3.1rem;
-    }
-
-    @media (max-width: 576px) {
-        font-size: 2.6rem;
-    }
-}
-
-%heading-h2-base {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.05;
-
-    @media (max-width: 992px) {
-        font-size: 2.4rem;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 1.9rem;
-    }
-
-    @media (max-width: 576px) {
-        font-size: 1.7rem;
-    }
-}
-
 * {
     font-family: 'Inter', sans-serif;
 }
@@ -122,6 +77,7 @@ p {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 10px;
+    text-decoration: none;
 
     .icon {
         margin-left: 8px;
@@ -145,301 +101,6 @@ p {
 
 .flexbox-lg {
     display: block;
-}
-
-.main {
-    background-image: url('../img/bg-overlay.png'), url('../img/bg-frame.svg');
-    background-repeat: no-repeat;
-    background-position: top right;
-}
-
-/* ----------------------------- Hero Section ----------------------------- */
-.hero {
-    padding-top: 192px;
-
-    .hero-content {
-        max-width: 1000px;
-    }
-
-    .hero-heading {
-        @extend %heading-h1-base;
-        margin-bottom: 55px;
-    }
-
-    .hero-paragraph {
-        @extend %body-text-base;
-        margin-bottom: 32px;
-        max-width: 900px;
-    }
-}
-
-/* ----------------------------- About Section ----------------------------- */
-.about {
-    padding-top: 45px;
-    padding-bottom: 70px;
-
-    .about-content {
-        height: 100%;
-        display: grid;
-        align-content: center;
-    }
-
-    .about-img {
-        margin-left: auto;
-        height: 667px;
-        max-width: 455px;
-        background-color: rgb(173, 173, 173);
-        border-radius: 10px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
-
-    .about-heading {
-        @extend %heading-h2-base;
-        max-width: 690px;
-        margin-bottom: 55px;
-    }
-
-    .about-para {
-        @extend %body-text-base;
-        max-width: 590px;
-        margin-bottom: 22px;
-    }
-
-    .about-name {
-        margin-top: 10px;
-        color: $primary;
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
-}
-
-/* ----------------------------- Testimonials Section ----------------------------- */
-.testimonials {
-    background-color: $maroon;
-    padding: 84px 0;
-
-    .testimonials-swiper {
-        margin-top: 65px;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-
-        .testimonial-title {
-            color: #fff;
-            @extend %heading-h2-base;
-        }
-
-        .testimonial-para {
-            margin-top: 54px;
-            color: #fff;
-            @extend %body-text-base;
-            line-height: 2;
-        }
-
-        .testimonial-author {
-            margin-top: 48px;
-            font-size: 1.25rem;
-            line-height: 24px;
-        }
-
-        .explore-navigation {
-            margin-left: auto;
-            display: flex;
-            justify-content: flex-end;
-
-            %swiper-btn {
-                color: #fff;
-
-                &.swiper-button-disabled {
-                    color: rgba(255, 255, 255, 0.3);
-                }
-            }
-
-            .swiper-btn-prev {
-                @extend %swiper-btn;
-                margin-right: 50px;
-            }
-
-            .swiper-btn-next {
-                @extend %swiper-btn;
-            }
-        }
-    }
-}
-
-/* ----------------------------- Explore Section ----------------------------- */
-.explore {
-    padding-top: 128px;
-
-    .explore-heading {
-        @extend %heading-h1-base;
-        margin-bottom: 72px;
-    }
-
-    .explore-swiper {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-
-        %swiper-fade {
-            position: absolute;
-            top: 0;
-            width: 189px;
-            height: 100%;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        %swiper-btn {
-            position: absolute;
-            top: 140px;
-            z-index: 2;
-        }
-
-        .swiper-btn-prev {
-            @extend %swiper-btn;
-            left: 32px;
-        }
-
-        .swiper-btn-next {
-            @extend %swiper-btn;
-            right: 32px;
-        }
-
-        .swiper-fade-left {
-            @extend %swiper-fade;
-            left: 0;
-            background-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
-        }
-
-        .swiper-fade-right {
-            @extend %swiper-fade;
-            right: 0;
-            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10.49%, #ffffff 110.56%);
-        }
-    }
-
-    .explore-img {
-        width: 100%;
-        height: 308px;
-        background-color: rgb(173, 173, 173);
-        border-radius: 10px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
-
-    .explore-title {
-        margin-top: 32px;
-        font-size: 1.75rem;
-        font-weight: 600;
-    }
-
-    .explore-meta {
-        margin-top: 8px;
-        color: $secondary;
-        font-size: 0.9rem;
-        line-height: 24px;
-        letter-spacing: -0.03em;
-    }
-}
-
-/* ----------------------------- Rapid Transformation Section ----------------------------- */
-.rapid-transformation {
-    padding-top: 68px;
-
-    .rapid-transformation-content {
-        position: relative;
-    }
-
-    .bg-img {
-        height: auto;
-        width: 100%;
-        background-color: rgb(173, 173, 173);
-        border-radius: 10px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-        background-color: rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-    }
-
-    .overlay-content {
-        padding: 64px;
-    }
-}
-
-/* ----------------------------- Process Section ----------------------------- */
-.process {
-    padding-top: 128px;
-    padding-bottom: 145px;
-    overflow: hidden;
-
-    .process-heading {
-        @extend %heading-h1-base;
-        max-width: 777px;
-        margin-bottom: 68px;
-    }
-
-    .process-step-heading {
-        font-size: 2.625rem;
-        font-weight: 700;
-        line-height: 1;
-    }
-
-    .stepper {
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: visible;
-    }
-
-    .step {
-        display: flex;
-        flex-shrink: 0;
-        width: 100%;
-        opacity: 0;
-
-        &:first-child {
-            opacity: 1;
-        }
-    }
-
-    .step-heading {
-        flex: 1;
-    }
-
-    .step-content {
-        margin-left: 20px;
-        flex: 4;
-    }
 }
 
 /* ----------------------------- Booking Section ----------------------------- */
@@ -554,9 +215,7 @@ p {
 
     .video-player {
         position: relative;
-        max-width: 1140px;
-        padding-right: var(--bs-gutter-x, 0.75rem);
-        padding-left: var(--bs-gutter-x, 0.75rem);
+        width: 100%;
 
         video {
             width: 100%;
@@ -567,7 +226,7 @@ p {
     .player-close-btn {
         position: absolute;
         top: 28px;
-        right: 28px;
+        right: 20px;
         color: #fff;
         font-size: 1.8rem;
         cursor: pointer;
@@ -584,54 +243,6 @@ p {
 
     .flexbox-lg {
         display: flex;
-    }
-
-    /* ----------------------------- Hero Section ----------------------------- */
-    .hero {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding-top: 0;
-    }
-
-    /* ----------------------------- About Section ----------------------------- */
-    .about {
-        padding-top: 10px;
-
-        .about-img {
-            margin: auto;
-            margin-top: 40px;
-            height: 586px;
-            max-width: 400px;
-        }
-
-        .about-name {
-            font-size: 1.1rem;
-        }
-    }
-
-    /* ----------------------------- Testimonials Section ----------------------------- */
-    .testimonials {
-        .testimonials-swiper {
-            .testimonial-author {
-                font-size: 1.1rem;
-            }
-        }
-    }
-
-    /* ----------------------------- Process Section ----------------------------- */
-    .process {
-        .process-step-heading {
-            font-size: 2.125rem;
-        }
-
-        .step-heading {
-            flex: 2;
-        }
-
-        .step-content {
-            flex: 5;
-        }
     }
 
     /* ----------------------------- Booking Section ----------------------------- */
@@ -675,57 +286,12 @@ p {
             text-align: center;
         }
     }
-
-    /* -----------------------------Video Player ----------------------------- */
-    .video-player-wrapper {
-        .video-player {
-            max-width: 960px;
-        }
-    }
 }
 
 @media (max-width: 768px) {
     /* ----------------------------- Gloabal Styles ----------------------------- */
     .text-btn {
         font-size: 1rem;
-    }
-
-    /* ----------------------------- About Section ----------------------------- */
-    .about {
-        .about-name {
-            font-size: 1rem;
-        }
-    }
-
-    /* ----------------------------- Testimonials Section ----------------------------- */
-    .testimonials {
-        .testimonials-swiper {
-            .testimonial-author {
-                font-size: 1rem;
-            }
-        }
-    }
-
-    /* ----------------------------- Rapid Transformation Section ----------------------------- */
-    .rapid-transformation {
-        .overlay-content {
-            padding: 34px 40px;
-        }
-    }
-
-    /* ----------------------------- Process Section ----------------------------- */
-    .process {
-        .process-step-heading {
-            font-size: 2rem;
-        }
-
-        .step-heading {
-            flex: 3;
-        }
-
-        .step-content {
-            flex: 6;
-        }
     }
 
     /* ----------------------------- Booking Section ----------------------------- */
@@ -738,51 +304,12 @@ p {
             font-size: 1.1rem;
         }
     }
-
-    /* -----------------------------Video Player ----------------------------- */
-    .video-player-wrapper {
-        .video-player {
-            max-width: 720px;
-        }
-    }
 }
 
 @media (max-width: 576px) {
     /* ----------------------------- Gloabal Styles ----------------------------- */
     .title-text {
         font-size: 0.9rem;
-    }
-
-    /* ----------------------------- About Section ----------------------------- */
-    .about {
-        .about-img {
-            margin: auto;
-            margin-top: 40px;
-            height: 540px;
-            max-width: 400px;
-        }
-    }
-
-    /* ----------------------------- Rapid Transformation Section ----------------------------- */
-    .rapid-transformation {
-        .overlay-content {
-            padding: 16px 20px;
-        }
-    }
-
-    /* ----------------------------- Process Section ----------------------------- */
-    .process {
-        .process-step-heading {
-            font-size: 1.25rem;
-        }
-
-        .step-heading {
-            flex: 3;
-        }
-
-        .step-content {
-            flex: 6;
-        }
     }
 
     /* ----------------------------- Booking Section ----------------------------- */
@@ -793,13 +320,6 @@ p {
 
         .title {
             font-size: 1rem;
-        }
-    }
-
-    /* -----------------------------Video Player ----------------------------- */
-    .video-player-wrapper {
-        .video-player {
-            max-width: 540px;
         }
     }
 }

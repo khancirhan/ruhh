@@ -1,0 +1,103 @@
+.stepper .stepper-para {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 576px) {
+  .stepper .stepper-para {
+    font-size: 0.9rem;
+  }
+}
+
+.stepper .stepper-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .stepper .stepper-heading {
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .stepper .stepper-heading {
+    font-size: 3.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .stepper .stepper-heading {
+    font-size: 2.6rem;
+  }
+}
+
+.main {
+  background-image: url("../img/bg-overlay.png"), url("../img/bg-frame.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  min-height: 100vh;
+  background-color: rgba(224, 32, 85, 0.2);
+}
+
+.stepper {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.stepper .stepper-heading {
+  max-width: 690px;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+.stepper .stepper-para {
+  max-width: 590px;
+  margin-bottom: 80px;
+}
+.stepper .stepper-form-control {
+  width: 100%;
+  padding-bottom: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #e02055;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 33.89px;
+  max-width: 702px;
+}
+.stepper .stepper-form-control::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.stepper .suggestion-pills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stepper .suggestion-pills .suggestion-pill {
+  margin-top: 26px;
+  margin-right: 26px;
+  color: #e02055;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 3px solid #e02055;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 170px;
+  padding: 10px 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .stepper .suggestion-pills .suggestion-pill {
+    margin-top: 26px;
+    margin-right: 20px;
+    min-width: 140px;
+    padding: 8px 6px;
+  }
+}
+@media (max-width: 576px) {
+  .stepper .suggestion-pills .suggestion-pill {
+    margin-top: 26px;
+    margin-right: 16px;
+    min-width: 130px;
+  }
+}
+
+/*# sourceMappingURL=book-session.css.map */
