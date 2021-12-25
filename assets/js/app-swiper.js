@@ -40,3 +40,15 @@ const swiper2 = new Swiper('#exploreSwiper', {
         prevEl: '.swiper-btn-prev',
     },
 });
+
+/*
+ * Booking section Swiper
+ */
+const swiper3 = new Swiper('#formSwiper', {
+    spaceBetween: 0,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+});

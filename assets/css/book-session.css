@@ -41,9 +41,30 @@
   padding-top: 100px;
   padding-bottom: 60px;
 }
+.stepper .back-btn {
+  display: block;
+  margin-top: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.stepper .form-swiper {
+  overflow: hidden;
+}
+.stepper .stepper-navigation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.stepper .stepper-navigation .swiper-btn-prev,
+.stepper .stepper-navigation .swiper-btn-next {
+  color: #e02055;
+}
+.stepper .stepper-navigation .swiper-btn-prev {
+  margin-right: 30px;
+}
 .stepper .stepper-heading {
   max-width: 690px;
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 35px;
 }
 .stepper .stepper-para {
@@ -65,11 +86,11 @@
 .stepper .stepper-form-control::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
-.stepper .suggestion-pills {
+.stepper .button-pills {
   display: flex;
   flex-wrap: wrap;
 }
-.stepper .suggestion-pills .suggestion-pill {
+.stepper .button-pills .button-pill {
   margin-top: 26px;
   margin-right: 26px;
   color: #e02055;
@@ -79,13 +100,13 @@
   border-radius: 10px;
   text-align: center;
   min-width: 170px;
-  padding: 10px 6px;
+  padding: 10px 16px;
   cursor: pointer;
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
-  .stepper .suggestion-pills .suggestion-pill {
+  .stepper .button-pills .button-pill {
     margin-top: 26px;
     margin-right: 20px;
     min-width: 140px;
@@ -93,7 +114,7 @@
   }
 }
 @media (max-width: 576px) {
-  .stepper .suggestion-pills .suggestion-pill {
+  .stepper .button-pills .button-pill {
     margin-top: 26px;
     margin-right: 16px;
     min-width: 130px;
