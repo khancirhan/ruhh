@@ -36,6 +36,10 @@
         .swiper-btn-prev {
             margin-right: 30px;
         }
+
+        .swiper-button-disabled {
+            color: rgba($primary, 0.5);
+        }
     }
 
     .stepper-heading {
@@ -64,7 +68,7 @@
         max-width: 702px;
 
         &::placeholder {
-            color: rgba(0, 0, 0, 0.2);
+            color: rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -73,6 +77,8 @@
         flex-wrap: wrap;
 
         .button-pill {
+            display: flex;
+            align-items: center;
             margin-top: 26px;
             margin-right: 26px;
             color: $primary;
@@ -85,6 +91,18 @@
             padding: 10px 16px;
             cursor: pointer;
             text-decoration: none;
+        }
+    }
+
+    .time-pill {
+        .icon {
+            display: none;
+            line-height: 1;
+            margin-left: 10px;
+
+            &.active {
+                display: inline-block;
+            }
         }
     }
 }

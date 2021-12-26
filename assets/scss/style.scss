@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'footer';
 
 /* ----------------------------- Gloabal Styles ----------------------------- */
 * {
@@ -103,6 +104,14 @@ p {
     display: block;
 }
 
+select {
+    color: black;
+}
+
+select:invalid {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 /* ----------------------------- Booking Section ----------------------------- */
 .booking {
     padding: 30px 0;
@@ -127,70 +136,6 @@ p {
         font-size: 1.5rem;
         font-weight: 600;
         line-height: 1.5;
-    }
-}
-
-/* ----------------------------- Footer Section ----------------------------- */
-.footer {
-    background-color: $maroon;
-    padding: 58px 0;
-
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .footer-links {
-        display: flex;
-    }
-
-    .footer-link {
-        text-decoration: none;
-        color: rgba(#fff, 0.5);
-        margin-right: 64px;
-        transition: color 0.15s ease-in-out;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &:hover {
-            color: rgba(#fff, 0.7);
-        }
-    }
-
-    .copyright-text {
-        margin-top: 32px;
-        color: #fff;
-        font-size: 0.85rem;
-    }
-
-    .social-title {
-        text-transform: uppercase;
-        color: rgba(#fff, 0.5);
-        font-weight: 700;
-        letter-spacing: 0.25em;
-    }
-
-    .social-links {
-        margin-top: 38px;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .social-link {
-        text-decoration: none;
-        margin-right: 18px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        img {
-            width: 22px;
-            height: 22px;
-            background-color: #eeeeee;
-        }
     }
 }
 
@@ -253,37 +198,6 @@ p {
 
         .title {
             font-size: 1.2rem;
-        }
-    }
-
-    /* ----------------------------- Footer Section ----------------------------- */
-    .footer {
-        .footer-content {
-            flex-direction: column-reverse;
-        }
-
-        .footer-links {
-            margin-top: 32px;
-            flex-wrap: wrap;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .footer-link {
-            font-size: 0.9rem;
-            margin: 10px;
-
-            &:last-child {
-                margin: 10px;
-            }
-        }
-
-        .social-links {
-            margin-top: 0;
-        }
-
-        .copyright-text {
-            text-align: center;
         }
     }
 }

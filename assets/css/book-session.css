@@ -62,6 +62,9 @@
 .stepper .stepper-navigation .swiper-btn-prev {
   margin-right: 30px;
 }
+.stepper .stepper-navigation .swiper-button-disabled {
+  color: rgba(224, 32, 85, 0.5);
+}
 .stepper .stepper-heading {
   max-width: 690px;
   margin-top: 20px;
@@ -84,13 +87,15 @@
   max-width: 702px;
 }
 .stepper .stepper-form-control::placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.3);
 }
 .stepper .button-pills {
   display: flex;
   flex-wrap: wrap;
 }
 .stepper .button-pills .button-pill {
+  display: flex;
+  align-items: center;
   margin-top: 26px;
   margin-right: 26px;
   color: #e02055;
@@ -103,6 +108,14 @@
   padding: 10px 16px;
   cursor: pointer;
   text-decoration: none;
+}
+.stepper .time-pill .icon {
+  display: none;
+  line-height: 1;
+  margin-left: 10px;
+}
+.stepper .time-pill .icon.active {
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
