@@ -52,5 +52,3 @@ const swiper3 = new Swiper('#formSwiper', {
         prevEl: '.swiper-btn-prev',
     },
 });
-
-swiper3.slideTo(10);
