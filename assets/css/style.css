@@ -1,9 +1,9 @@
-.body-text {
+.link, .body-text {
   font-size: 1rem;
   letter-spacing: -0.03em;
 }
 @media (max-width: 576px) {
-  .body-text {
+  .link, .body-text {
     font-size: 0.9rem;
   }
 }
@@ -288,6 +288,14 @@ select {
 
 select:invalid {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #007bff;
 }
 
 /* ----------------------------- Booking Section ----------------------------- */

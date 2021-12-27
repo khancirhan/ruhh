@@ -34,7 +34,6 @@
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 100vh;
-  background-color: rgba(224, 32, 85, 0.2);
 }
 
 .stepper {
@@ -96,6 +95,7 @@
 .stepper .button-pills .button-pill {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 26px;
   margin-right: 26px;
   color: #e02055;
