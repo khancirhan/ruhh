@@ -40,17 +40,11 @@
   padding-top: 100px;
   padding-bottom: 60px;
 }
-.stepper .back-btn {
-  display: block;
-  margin-top: 50px;
-  cursor: pointer;
-  text-decoration: none;
-}
 .stepper .form-swiper {
   overflow: hidden;
 }
 .stepper .stepper-navigation {
-  margin-top: 30px;
+  margin-top: 0px;
   display: flex;
   justify-content: flex-end;
 }
@@ -66,12 +60,15 @@
 }
 .stepper .stepper-heading {
   max-width: 690px;
-  margin-top: 20px;
+  margin-top: 48px;
   margin-bottom: 35px;
 }
 .stepper .stepper-para {
   max-width: 590px;
-  margin-bottom: 80px;
+  margin-bottom: 24px;
+}
+.stepper .stepper-form-block {
+  margin-bottom: 60px;
 }
 .stepper .stepper-form-control {
   width: 100%;

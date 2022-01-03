@@ -1,0 +1,22 @@
+@import 'variables';
+
+/* ----------------------------- blog Section ----------------------------- */
+.privacy {
+    padding-top: 162px;
+    padding-bottom: 70px;
+
+    .privacy-heading {
+        @extend %heading-h2-base;
+        margin-bottom: 34px;
+    }
+
+    .privacy-subheading {
+        @extend %heading-h4-base;
+        margin-bottom: 24px;
+    }
+
+    .privacy-meta {
+        @extend %body-text-base;
+        margin-bottom: 40px;
+    }
+}

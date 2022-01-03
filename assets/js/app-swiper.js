@@ -45,6 +45,8 @@ const swiper2 = new Swiper('#exploreSwiper', {
  * Booking section Swiper
  */
 const swiper3 = new Swiper('#formSwiper', {
+    autoHeight: true,
+    allowTouchMove: false,
     spaceBetween: 0,
     slidesPerView: 1,
     navigation: {

@@ -1,0 +1,68 @@
+.privacy .privacy-meta {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 576px) {
+  .privacy .privacy-meta {
+    font-size: 0.9rem;
+  }
+}
+
+.privacy .privacy-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .privacy .privacy-heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .privacy .privacy-heading {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .privacy .privacy-heading {
+    font-size: 1.7rem;
+  }
+}
+
+.privacy .privacy-subheading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+@media (max-width: 992px) {
+  .privacy .privacy-subheading {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .privacy .privacy-subheading {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .privacy .privacy-subheading {
+    font-size: 1.2rem;
+  }
+}
+
+/* ----------------------------- blog Section ----------------------------- */
+.privacy {
+  padding-top: 162px;
+  padding-bottom: 70px;
+}
+.privacy .privacy-heading {
+  margin-bottom: 34px;
+}
+.privacy .privacy-subheading {
+  margin-bottom: 24px;
+}
+.privacy .privacy-meta {
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=privacy.css.map */

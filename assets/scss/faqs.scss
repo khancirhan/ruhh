@@ -1,0 +1,20 @@
+@import 'variables';
+
+/* ----------------------------- blog Section ----------------------------- */
+.faq {
+    padding-top: 162px;
+    padding-bottom: 70px;
+
+    .faq-content {
+        margin-bottom: 48px;
+    }
+
+    .faq-question {
+        @extend %heading-h4-base;
+        margin-bottom: 24px;
+    }
+
+    .faq-answer {
+        @extend %body-text-base;
+    }
+}

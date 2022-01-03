@@ -27,34 +27,16 @@
                 <div class="container">
                     <img src="assets/img/logo.svg" alt="" />
 
-                    <a id="backBtn" class="back-btn">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="40px"
-                            viewBox="0 0 80.4 64.9"
-                            fill="currentColor"
-                        >
-                            <g id="Layer_2" data-name="Layer 2">
-                                <g id="Layer_1-2" data-name="Layer 1">
-                                    <g id="UbKmFJ.tif">
-                                        <path
-                                            d="M13.8,28.5h62a4.3,4.3,0,0,1,3.4,1.3,3.6,3.6,0,0,1,.9,4.1,3.8,3.8,0,0,1-3.5,2.6H13.8l.9.9L34.9,57.6c1.7,1.7,2,3.5,1.1,5.2a4.1,4.1,0,0,1-6,1.3l-.9-.9L1.8,35.9c-2.4-2.4-2.4-4.5,0-6.9L29.2,1.6c1.7-1.7,3.4-2,5.2-1.1a4,4,0,0,1,1.2,5.9,8.7,8.7,0,0,1-.9,1.1l-20,20Z"
-                                        />
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-
-                    <form id="form" action="#">
+                    <form id="sessionform">
                         <!-- Slider main container -->
                         <div id="formSwiper" class="form-swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
+                                    <h2 class="stepper-heading text-primary">Step 1</h2>
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 1</h2>
                                         <p class="stepper-para">
                                             Let's start by confirming the area you wish to work on, how it's impacting
                                             you and what it is you want from your session: <sup>*</sup>
@@ -86,21 +68,9 @@
                                             <option value="Antigua & Barbuda">General Physical Health</option>
                                             <option value="Antigua & Barbuda">Other</option>
                                         </select>
-
-                                        <!-- <input name="workOnArea" class="stepper-form-control" type="text" /> -->
-                                        <!-- 
-                                        <div class="button-pills">
-                                            <a class="button-pill suggestion-pill">Depression</a>
-                                            <a class="button-pill suggestion-pill">Diabetes</a>
-                                            <a class="button-pill suggestion-pill">Addictions</a>
-                                            <a class="button-pill suggestion-pill">Cancer</a>
-                                        </div> -->
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 2</h2>
                                         <p class="stepper-para">How has this impacted your life? <sup>*</sup></p>
 
                                         <input
@@ -110,11 +80,8 @@
                                             placeholder="Type your answer here..."
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 3</h2>
                                         <p class="stepper-para">
                                             If the therapist could give you one thing before you leave the session what
                                             would that be? <sup>*</sup>
@@ -130,8 +97,9 @@
                                 </div>
                                 <!--  -->
                                 <div class="swiper-slide">
+                                    <h2 class="stepper-heading text-primary">Step 2</h2>
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 4</h2>
                                         <p class="stepper-para">
                                             Thank you. Now please provide us with your name and contact details before
                                             selecting a time for your call in the last step.
@@ -146,11 +114,8 @@
                                             placeholder="Type your answer here..."
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 5</h2>
                                         <p class="stepper-para">
                                             Thank you, <span class="users-name">_____</span>. <br />
                                             May I now take your surname please? <sup>*</sup>
@@ -163,11 +128,8 @@
                                             placeholder="Type your answer here..."
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 6</h2>
                                         <p class="stepper-para">Date of Birth</p>
 
                                         <input
@@ -177,11 +139,8 @@
                                             placeholder="DD-MM-YYYY"
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 7</h2>
                                         <p class="stepper-para">Next your email please? <sup>*</sup></p>
 
                                         <input
@@ -191,11 +150,8 @@
                                             placeholder="name@example.com"
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 8</h2>
                                         <p class="stepper-para">
                                             Your contact number please, <span class="users-name">_____?</span>
                                             <sup>*</sup>
@@ -208,11 +164,8 @@
                                             placeholder="+91 1800232122"
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 9</h2>
                                         <p class="stepper-para">Which city / state do you live in? <sup>*</sup></p>
 
                                         <input
@@ -222,11 +175,8 @@
                                             placeholder="Type your answer here..."
                                         />
                                     </div>
-                                </div>
-                                <!--  -->
-                                <div class="swiper-slide">
+
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 10</h2>
                                         <p class="stepper-para">Country <sup>*</sup></p>
 
                                         <select required class="stepper-form-control" name="country">
@@ -483,7 +433,7 @@
                                 <!--  -->
                                 <div class="swiper-slide">
                                     <div class="stepper-form-block">
-                                        <h2 class="stepper-heading text-primary">Step 11</h2>
+                                        <h2 class="stepper-heading text-primary">Step 3</h2>
                                         <p class="stepper-para">
                                             Great! Now it's time to select a time for your initial consultation.
                                             <sup>*</sup>
@@ -515,7 +465,13 @@
                                         </div>
 
                                         <div class="mt-5">
-                                            <button type="submit" class="elevated-btn btn-primary">Submit</button>
+                                            <button
+                                                id="sessionFormSubmit"
+                                                type="button"
+                                                class="elevated-btn btn-primary"
+                                            >
+                                                Submit
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -642,9 +598,7 @@
             }
         });
 
-        $('#form').submit(function (e) {
-            e.preventDefault();
-
+        $('#sessionFormSubmit').click(function (e) {
             const formValues = getFormValues();
 
             sessionStorage.clear();
