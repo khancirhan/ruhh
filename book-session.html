@@ -108,6 +108,7 @@
                                         </p>
 
                                         <input
+                                            id="firstNameInput"
                                             name="firstName"
                                             class="stepper-form-control"
                                             type="text"
@@ -588,14 +589,20 @@
 
         setFormValuesFromLocalStorage();
 
+        $('#firstNameInput').on('blur', function (e) {
+            const value = e.target.value;
+
+            if (value) {
+                $('.users-name').text(value);
+            } else {
+                $('.users-name').text('_____');
+            }
+        });
+
         $('#stepperNext').click(function () {
             const formValues = getFormValues();
 
             sessionStorage.setItem('formValues', JSON.stringify(formValues));
-
-            if (formValues.firstName) {
-                $('.users-name').text(formValues.firstName);
-            }
         });
 
         $('#sessionFormSubmit').click(function (e) {
